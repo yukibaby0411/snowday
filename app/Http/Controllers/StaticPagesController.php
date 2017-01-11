@@ -11,6 +11,6 @@ class StaticPagesController extends Controller
 {
     public function home()
     {
-        return 123;
+        return view('static_pages/home');
     }
 }

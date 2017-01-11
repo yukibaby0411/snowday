@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-get('/home','StaticPagesController@home');
+get('/home','StaticPagesController@home')->name('home');

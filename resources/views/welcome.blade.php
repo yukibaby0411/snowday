@@ -21,7 +21,9 @@
                 width: 100%;
                 display: table;
                 font-weight: 100;
-                font-family: 'Lato';
+                font-family: '微软雅黑', '宋体', sans-serif;
+                background-color: #ff634e;
+                color: white;
             }
 
             .container {
@@ -52,7 +54,7 @@
                 setTimeout("$('.title3').fadeOut(1000)",6250);
                 setTimeout("$('.title4').fadeIn(1000)",7250);
                 setTimeout("$('.title4').fadeOut(1000)",9000);
-                setTimeout("window.location.href='http://snowday.app'",9500);
+                setTimeout("window.location.href='http://snowday.app/home'",9500);
             });
         </script>
     </head>
