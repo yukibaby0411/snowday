@@ -2,6 +2,8 @@
 
 @section('title', '主页')
 
+@section('from', 'home')
+
 @section('link')
     <link type="text/css" rel="stylesheet" href="css/hua_default.css">
     <script type="text/javascript" src="js/hua_jscex.min.js"></script>

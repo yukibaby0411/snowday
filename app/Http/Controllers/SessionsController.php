@@ -11,9 +11,9 @@ use Auth;
 
 class SessionsController extends Controller
 {
-    public function create()
+    public function create($from = 'home')
     {
-        return view('sessions.create');
+        return view('sessions.create')->with('from',$from);
     }
 
     public function store(Request $request)
@@ -30,7 +30,9 @@ class SessionsController extends Controller
 
         if (Auth::attempt($credentials, $request->has('remember'))) {
             session()->flash('success', '欢迎回来！');
-            return redirect()->route('users.show', [Auth::user()]);
+
+            return redirect()->route($request->from, [Auth::user()]);
+
         } else {
             session()->flash('danger', '抱歉，你的邮箱和密码不匹配');
             return redirect()->back();
@@ -41,6 +43,6 @@ class SessionsController extends Controller
     {
         Auth::logout();
         session()->flash('success', '你已成功退出！');
-        return redirect();
+        return view('static_pages.home');
     }
 }

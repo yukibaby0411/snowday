@@ -30,6 +30,6 @@ patch('/users/{id}', 'UsersController@update')->name('users.update');  //更新�
 delete('/users/{id}', 'UsersController@destroy')->name('users.destroy');  //删除数据操作
 */
 
-get('login', 'SessionsController@create')->name('login');
-post('login', 'SessionsController@store')->name('login');
-delete('logout', 'SessionsController@destroy')->name('logout');
+get('/login/{from?}', 'SessionsController@create')->name('login');
+post('/login', 'SessionsController@store')->name('login');
+delete('/logout', 'SessionsController@destroy')->name('logout');

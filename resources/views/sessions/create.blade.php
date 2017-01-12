@@ -27,6 +27,8 @@
                         <label><input type="checkbox" name="remember"> 记住我</label>
                     </div>
 
+                    <input type="hidden" value="{{ $from }}" name="from">
+
                     <button type="submit" class="btn btn-danger">登录</button>
                 </form>
 

@@ -50,7 +50,7 @@
                         </ul>
                     </li>
                 @else
-                    <li><a href="{{ route('login') }}">登录</a></li>
+                    <li><a href="{{ route('login') }}/@yield('from')">登录</a></li>
                     <li><a href="{{ route('users.create') }}">注册</a></li>
                 @endif
             </ul>

@@ -37,7 +37,7 @@
 
                     <hr>
 
-                    已有账号？<a href="{{ route('login') }}">马上登录！</a>
+                    已有账号？<a href="{{ route('login') }}/home">马上登录！</a>
                 </form>
             </div>
         </div>
