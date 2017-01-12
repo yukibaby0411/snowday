@@ -7,13 +7,14 @@
     <link rel="icon" href="/images/logo.png" role="link" >
     @yield('link')
 </head>
-<body>
+<body style="background-color: #fffddd;">
 
 @include('layouts._header')
 
-<div class="container">
-    @yield('content')
-</div>
+    <div class="container" style=" width:1100px; margin-top: 10px; min-height: 700px; background-color: #fffeee;">
+        @include('shared.messages')
+        @yield('content')
+    </div>
 
 @include('layouts._footer')
 
