@@ -60,7 +60,7 @@
             <div id="clock-box"> <span class="STYLE1"></span><font color="#ff8030">社区开始建设</font> <span class="STYLE1">已经……</span>
                 <div id="clock"></div>
             </div>
-            <canvas id="canvas" width="1100" height="680"></canvas>
+            <canvas id="canvas" width="1100" height="680" style="margin-left: -15px;"></canvas>
         </div>
     </div>
     <script>
