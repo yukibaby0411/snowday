@@ -22,7 +22,7 @@
         </nav>
         <nav>
             <ul class="nav navbar-nav navbar-right">
-                @if(1)
+                @if(0)
                     <li><a href="#">消息(0)</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -43,7 +43,7 @@
                     </li>
                 @else
                     <li><a href="#">登录</a></li>
-                    <li><a href="#">注册</a></li>
+                    <li><a href="{{ route('register') }}">注册</a></li>
                 @endif
             </ul>
         </nav>

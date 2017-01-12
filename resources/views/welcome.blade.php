@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>欢迎你 - 优一兔社区 - Coder的在线清吧</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <link href="/css/app.css" rel="stylesheet" type="text/css">
@@ -54,7 +54,7 @@
                 setTimeout("$('.title3').fadeOut(1000)",6250);
                 setTimeout("$('.title4').fadeIn(1000)",7250);
                 setTimeout("$('.title4').fadeOut(1000)",9000);
-                setTimeout("window.location.href='http://snowday.app/home'",9500);
+                setTimeout("window.location.href='home'",9500);
             });
         </script>
     </head>
