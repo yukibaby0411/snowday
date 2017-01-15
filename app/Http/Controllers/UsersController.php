@@ -42,6 +42,4 @@ class UsersController extends Controller
         session()->flash('success', '欢迎，你将在这里开启一段新的旅程~');
         return redirect()->route('users.show', [$user]);  //链接跳转，并绑定注册数据
     }
-
-
 }

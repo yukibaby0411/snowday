@@ -31,12 +31,12 @@
                     <li><a href="#">消息(0)</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-top: 10px;padding-bottom: 10px;">
-                            <img src="/images/logo.png" class="head_img">
+                            <img src="{{ Auth::user()->gravatar() }}" class="head_img">
                             <span class="user">{{ Auth::user()->name }}</span>&nbsp;<b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">个人中心</a></li>
-                            <li><a href="#">编辑资料</a></li>
+                            <li><a href="#">个人首页</a></li>
+                            <li><a href="#">安全中心</a></li>
                             <li class="divider"></li>
                             <li>
                                 <a id="logout" href="#">
