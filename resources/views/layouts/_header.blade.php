@@ -12,7 +12,7 @@
         <a href="{{ route('home') }}" id="logo">u1tu social</a>
         <nav>
             <ul class="nav navbar-nav navbar-left">
-                <li><a href="">社区</a></li>
+                <li><a href="{{ route('posts.index') }}">社区</a></li>
                 <li><a href="javascript:void(0);" class="nav_line"> | </a></li>
                 <li><a href="">博客</a></li>
                 <li><a href="javascript:void(0);" class="nav_line"> | </a></li>

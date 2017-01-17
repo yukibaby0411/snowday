@@ -28,7 +28,7 @@ class User extends Model implements AuthenticatableContract,
      *
      * @var array
      */
-    protected $fillable = ['name', 'email', 'password'];  //过滤，只有包含在该属性中的字段才能够被正常更新
+    protected $fillable = ['name', 'email', 'password', 'avatar'];  //过滤，只有包含在该属性中的字段才能够被正常更新
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -46,5 +46,9 @@ class User extends Model implements AuthenticatableContract,
     public function setPasswordAttribute($password)  //每次设置密码时会自动调用
     {
         $this->attributes['password'] = bcrypt($password);
+    }
+    public function discussions()
+    {
+        return $this->hasMany(Discussion::class);
     }
 }

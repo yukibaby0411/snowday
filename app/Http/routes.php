@@ -35,3 +35,5 @@ delete('/users/{id}', 'UsersController@destroy')->name('users.destroy');  //åˆ é
 get('/login/{from?}', 'SessionsController@create')->name('login');
 post('/login', 'SessionsController@store')->name('login');
 delete('/logout', 'SessionsController@destroy')->name('logout');
+
+get('/posts', 'PostsController@index')->name('posts.index');
